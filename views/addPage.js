@@ -5,23 +5,27 @@ module.exports = () => layout(html `
   <h3>Add a Page</h3>
   <hr>
   <form method="POST" action="/wiki/">
-    
-    <div><div class="form-group">
-    <label for="author" class="col-sm-2 control-label">Author Name: </label>
-    <div class="col-sm-10">
-      <input id="author" name="author" type="text" class="form-control"/>
-    </div>
-    
-    <div><label>Author Name: </label><input id="email" name="email" type="text" class="form-control"/></div>
-    
+
     <div class="form-group">
-      <label for="title" class="col-sm-2 control-label">Page Title</label>
+      <label for="author" class="col-sm-2 control-label">Author Name: </label>
       <div class="col-sm-10">
-        <input id="title" name="title" type="text" class="form-control"/>
+        <input id="author" name="author" type="text" class="form-control" placeholder="Your Name">
+      </div>
+    </div>
+     
+    <div class="form-group">
+      <label for="title" class="col-sm-2 control-label">Title</label>
+      <div class="col-sm-10">
+        <input id="title" name="title" type="text" class="form-control"  placeholder="Article Title">
       </div>
     </div>
 
-    <div><input id="content" name="content" type="text" class="form-control"/></div>
+    <div class="form-group">
+      <label for="content" class="col-sm-2 control-label">Content</label>
+      <div class="col-sm-10">
+        <textarea id="content" type="text" rows="5" class="form-control"></textarea>
+        </div>
+    </div>
     
     <div>
       <form>  
